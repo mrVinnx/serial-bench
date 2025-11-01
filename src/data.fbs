@@ -1,0 +1,16 @@
+namespace flat_data;
+
+table TestData {
+  id: ulong;
+  name: string;
+  values: [double];
+  metadata: [KeyValue];
+  timestamp: long;
+}
+
+table KeyValue {
+  key: string;
+  value: string;
+}
+
+root_type TestData;
